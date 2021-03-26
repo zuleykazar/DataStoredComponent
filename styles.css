@@ -176,20 +176,48 @@ body{
     font-size: 1em;
 }
 
-/* Extra small devices (phones, 600px and down)
+/* Extra small devices (phones, 600px and down)*/
 @media screen and (max-width: 600px) {
 
     body{
         display: flex;
         flex-direction: column;
-        align-items: auto;
-        justify-content: center;
-
 
         background-image: url(Assets/bg-mobile.png);
-        background-size: 100vh;
-        background-position: -10px -150px;
+        background-size: 130%;
+        background-position: -100px -120px;
+    }
+
+    .box-left{
+        margin: 0 auto;
+    }
+
+    .box-bar{
+        width: 250px;
+        
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .text1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-info{
+        top: 410px;
+        left: 100px;
+    }
+
+    .triangle{
+        display: none;
+    }
+
+    .circle{
+        right: 46px;
     }
 
 }
- */
+
