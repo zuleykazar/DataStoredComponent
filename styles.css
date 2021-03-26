@@ -176,8 +176,53 @@ body{
     font-size: 1em;
 }
 
-/* Extra small devices (phones, 600px and down)*/
-@media screen and (max-width: 600px) {
+/* Extra small devices (phones, 375px and down)*/
+@media screen and (max-width: 375px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+
+        background-image: url(Assets/bg-mobile.png);
+        background-size: 100vh;
+        background-position: -100px -120px;
+    }
+
+    .box-left{
+        margin: 0 auto;
+    }
+
+    .box-bar{
+        width: 250px;
+        
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .text1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-info{
+        top: 400px;
+        left: 100px;
+    }
+
+    .triangle{
+        display: none;
+    }
+
+    .circle{
+        right: 46px;
+    }
+
+}
+
+/* Extra small devices (phones, 375px and down)*/
+@media screen and (min-width: 376px) and (max-width: 768px) {
 
     body{
         display: flex;
@@ -207,8 +252,8 @@ body{
     }
 
     .box-info{
-        top: 410px;
-        left: 100px;
+        top: 400px;
+        left: 300px;
     }
 
     .triangle{
@@ -219,5 +264,13 @@ body{
         right: 46px;
     }
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1044px){
+
+    .box-info{
+        top: 180px;
+        left: 710px;
+    }
 }
 
